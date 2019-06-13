@@ -1,0 +1,20 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: tensquare_base
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://152.136.52.66:3306/yunqy_base?characterEncoding=utf-8
+    #url: jdbc:mysql://192.168.79.2:3306/yunqy_base?characterEncoding=utf-8
+    username: root
+    password: 123456
+    #password: root
+  jpa:
+    database: MySQL
+    show-sql: true
+    generate-ddl: true
+jwt:
+  config:
+    key: yunqy
+    ttl: 3600000
